@@ -10,7 +10,29 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="collapse navber-collapse text-bg-dark" id="navbarNav">
+      <div class="container">
+        <div class="row">
+          <div class="col-8">
+            <h4>About</h4>
+            <p>
+              Add some information about the album below, the author, or any other background context. Make it a few
+              sentences long so folks can pick up some informative tidbits. Then, link them off to some social
+              networking sites or contact information.
+            </p>
+          </div>
+          <div class="col">
+            <h4>Contact Us</h4>
+            <ul class="navbar-nav">
+              <li><a class="nav-link active" href="#">GitHub</a></li>
+              <li><a class="nav-link active" href="#">LinkedIn</a></li>
+              <li><a class="nav-link active" href="#">Instagram</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav class="navbar navbar-dark bg-dark">
       <div class="container">
         <a class="navbar-brand" href="#">
           <svg
@@ -30,35 +52,27 @@
           </svg>
           <strong>Album</strong></a
         >
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarHeader"
+          aria-expanded="true"
+          aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
       </div>
     </nav>
 
-    <div class="collapse navber-collapse text-bg-dark" id="navbarNav">
+    <header class="py-5 text-center bg-light">
       <div class="container">
-        <div class="row">
-          <div class="col-8">
-            <h4>About</h4>
-            <p>
-              Add some information about the album below, the author, or any other background context. Make it a few
-              sentences long so folks can pick up some informative tidbits. Then, link them off to some social
-              networking sites or contact information.
-            </p>
-          </div>
-          <div class="col">
-            <h4>Contact Us</h4>
-            <ul class="navbar-nav ms-auto">
-              <li class="nav"><a class="nav-link active" href="#">GitHub</a></li>
-              <li class="nav"><a class="nav-link active" href="#">LinkedIn</a></li>
-              <li class="nav"><a class="nav-link active" href="#">Instagram</a></li>
-            </ul>
-          </div>
-        </div>
+        <h1 class="display-4">Album Example</h1>
+        <p>Something short and leading about the collection below—its contents, the creator, etc.</p>
+        <a href="#" class="btn btn-primary mx-2">Main Call to Action</a>
+        <a href="#" class="btn btn-secondary mx-2">Secondary Action</a>
       </div>
-    </div>
-
+    </header>
     <div class="album py-5 bg-body-tertiary">
       <div class="container">
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
@@ -335,5 +349,17 @@
         </div>
       </div>
     </div>
+    <footer class="py-3 bg-light">
+      <div class="container d-flex justify-content-between align-items-center">
+        <p class="mb-1">
+          Album example is © Bootstrap, but please download and customize it for yourself!
+          <br />
+          new to bootstrap?
+          <a href="#" class="text-primary">Visit the homepage</a> or read our
+          <a href="#" class="text-primary">getting started guide</a>
+        </p>
+        <a href="#" class="text-primary">Back to top</a>
+      </div>
+    </footer>
   </body>
 </html>
